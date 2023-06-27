@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+   padding: 10px 10px;
+    }
+    header{
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      font-size: 0.9rem;
+      padding-left: 20px;
+      text-transform: uppercase;
+    }
+    a:hover{
+      color:antiquewhite ;
+    }
+    main{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 15px;
+    }
+    .dis-main{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 15px;
+    align-items: center;
+    }
+    img{
+     width: 100%;
+    }
+
+    article{
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      border-radius: 8px;
+    }
+    @media(max-width: 720px) {
+        main {
+          grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        .dis-main {
+          grid-column: span 2;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media(max-width: 550px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+
+        nav {
+          display: none;
+        }
+
+        .icon {
+          display: flex;
+        }
+
+        .dis-main {
+          grid-column: span 1;
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>New Web</h1>
+    <nav>
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="dis-main">
+      <div class="dis-image">
+        <img src="https://images.unsplash.com/photo-1686719329383-705232207720?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDh8TThqVmJMYlRSd3N8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+      </div>
+      <div class="dis-info">
+        <h4>Sample Grid</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae rem deleniti voluptatum dolorum praesentium quasi, veniam sequi mollitia adipisci aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis recusandae quo suscipit distinctio quis.</p>
+      </div>
+    </div>
+    <article>
+      <h3>Sample Grid 1</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit et similique magnam tempore, repellat unde expedita hic dignissimos accusantium. Quas, modi. Adipisci possimus similique consequatur quisquam quae recusandae corporis quam? loewm15
+
+      </p>
+    </article>
+    <article>
+      <h3>Sample Grid 2</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit et similique magnam tempore, repellat unde expedita hic dignissimos accusantium. Quas, modi. Adipisci possimus similique consequatur quisquam quae recusandae corporis quam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molestias similique optio, aliquid sunt atque.</p>
+    </article>
+    <article>
+      <h3>Sample Grid 3</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit et similique magnam tempore, repellat unde expedita hic dignissimos accusantium. Quas, modi. Adipisci possimus similique consequatur quisquam quae recusandae corporis quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sunt libero? Sint incidunt repellat amet.</p>
+    </article>
+  </main>
+  
+</body>
+</html>
